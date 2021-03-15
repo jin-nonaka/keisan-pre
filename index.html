@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+  <title>男女割り勘電卓</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="top">
+    <h1>男は辛いよ～割り勘の心～</h1>
+  </div>
+  <div class="coment">
+    <p>会計金額、男性人数、女性人数、割り勘条件を入力してね！</p>
+  </div>
+  <div class="container">
+    <div class="input-area">
+      <input type="text" id="price" placeholder="会計金額">
+      <input type="text" id="manNum" placeholder="男性人数">
+      <input type="text" id="girlNum" placeholder="女性人数">
+    </div>
+    <div class="input-area">
+        <input type="text" id="than" placeholder="男性が1人〇円多く支払う">
+        <input type="text" id="rate" placeholder="男性が〇割払う">
+        <div id="btn1" class="disabled">計算する</div>
+        <div id="btn2" class="disabled">漢を見せる</div>
+        <audio id="audio"></audio>
+      </div>
+    <div class="result-area">
+      <p id="result" class="output">ここに結果を表示するよ！</p>
+      <p id="result2" class="output2"></p>
+      <p id="result3" class="output3"></p>
+      <div id="reset" class="hidden">もう一度計算する？</div>
+      <img src="images/good.png" id="pho" class="pic" width="100" height="100">
+      <img src="images/komatta.png" id="pho2" class="pic2" width="100" height="100">
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

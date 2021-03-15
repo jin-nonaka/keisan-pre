@@ -1,0 +1,417 @@
+/* タイトルの詳細 */
+.top {
+    background:white;
+    width: 500px;
+    height: 80px;
+    margin: 25px auto;
+    overflow: hidden;
+}
+ 
+/* タイトルの詳細 */
+h1 {
+    padding-top: 0%;
+    font-size: 30px;
+    text-align: center;
+    width: 500px;
+    white-space: nowrap;
+    user-select: none;
+    font-family: "Yu Gothic UI Light","Yu Gothic UI"; font-weight: 100;
+}
+
+body {
+    background: white;
+    font-size: 16px;
+    font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+.container {
+    width: 500px;
+    margin: 25px auto;
+}
+
+/* 条件入力部分 */
+#than,
+#manNum,
+#girlNum,
+#price,
+#num {
+    font-size: 14px;
+    box-sizing: border-box;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 10px;
+
+}
+
+/* ○円多く払う */
+#than {
+    width: 235px;
+    margin-right: 15px;
+}
+
+/* ○割多く払う */
+#rate {
+    width: 235px;
+    font-size: 14px;
+    box-sizing: border-box;
+    height: 40px;
+    border-radius: 5px;
+    border: solid 1px black;
+    margin-right: 10px;
+    margin-right: 15px;
+}
+
+/* 合計金・男性人数・女性人数の詳細*/
+#manNum,
+#girlNum,
+#price  {
+    width: 156px;
+}
+
+/* 計算するボタンの詳細 */
+#btn1 {
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 110px;
+    padding: 10px;
+    background: #3897fd;
+    font-size: 14px;
+    text-align: center;
+    color:#fff ;
+    user-select: none;
+    margin-right: 150px;
+    margin-left: 70px;
+    border-radius: 50%;
+    height: 110px;
+    line-height: 90px;
+}
+
+/* 男を見せるボタンの詳細 */
+#btn2 {
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 110px;
+    padding: 10px;
+    background: red;
+    font-size: 14px;
+    text-align: center;
+    color:#fff ;
+    user-select: none;
+    margin-top: 20px;
+    border-radius: 50%;
+    height: 110px;
+    line-height: 90px;
+}
+
+/* 入力エリア全体の詳細 */
+.input-area {
+    font-size: 0;
+    margin-bottom: 20px;
+    margin-top: 10px;  
+}
+
+/* 結果表示場所の詳細 */
+.result-area {
+    background: #f8f8f8;
+    padding: 10px;
+    height: 200px;
+    border: solid 2px black;
+    border-radius: 5px ;
+    position: relative;
+    margin-top: 40px;
+}
+
+/* ここに結果を表示しますの詳細 */
+#result {
+    margin: 0;
+    user-select: none;
+}
+
+/* もう一度計算するボタンの詳細 */
+#reset {
+    text-decoration: underline;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+#result.output {
+    color: red;
+    font-size: 27px;
+}
+
+/* 計算するボタンのopacity */
+#btn1.disabled {
+    opacity: 0.5;
+}
+/* 男を見せるボタンのopacity */
+#btn2.disabled {
+    opacity: 0.3;
+}
+
+/* 最初リセットボタンは隠す */
+#reset.hidden {
+    display: none;
+}
+
+/* ボタンを押した時に表示される画像の詳細 */
+#pho {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: 245px;
+}
+
+#pho.pic {
+    display: none;
+}
+
+#pho2 {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: 245px;
+}
+
+#pho2.pic2 {
+    display: none;
+}
+
+/* 会計金額、男性人数、女性人数、割り勘条件を入力してね！の詳細 */
+.coment {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.coment p {
+    font-size: 15px;
+    text-align: center;
+    user-select: none;
+    font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+/* ボタンを押した時のコメント表示ゾーンの詳細 */
+#result2 {
+  margin: 0;
+  margin-top: 5px;
+
+}
+
+#result3 {
+margin: 0;
+margin-top: 5px;
+}
+
+#result2.output2 {
+  display: none;
+}
+
+#result3.output3 {
+  display: none;
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+.top {
+    background: white;
+    width: 300px;
+    height: 50px;
+    margin: 25px auto;
+    overflow: hidden;
+}
+
+/* タイトルの詳細*/
+.coment {
+    background: white;
+    height: 50px;
+    margin: 25px auto;
+    overflow: hidden;
+    width: 300px;
+}
+ 
+/* タイトルの詳細*/
+h1 {
+    padding-top: 0%;
+    font-size: 23px;
+    text-align: center;
+    width: 300px;
+    user-select: none;
+    font-family: "Yu Gothic UI Light","Yu Gothic UI"; font-weight: 100;
+}
+
+body {
+    background: white;
+    font-size: 16px;
+    font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+.container {
+    width: 300px;
+    margin: 25px auto;
+}
+
+
+/* 条件入力部分の詳細 */
+#manNum,
+#girlNum,
+#price,
+#num {
+    font-size: 14px;
+    height: 30px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 7px;  
+}
+
+/* ○円多く払うの詳細 */
+#than {   
+    
+    margin-bottom: 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    height: 30px;
+    width: 290px;
+}
+
+/* ○割多く払うの詳細 */
+#rate {
+    width: 290px;
+    font-size: 14px;
+    height: 30px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+/* 会計金額の詳細 */
+#price {
+    width: 290px;
+}
+
+#than,
+#manNum,
+#girlNum,
+#num {
+    width: 290px;
+}
+
+/* 計算するボタンの詳細 */
+#btn1 {
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+    background: #3897fd;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    color:#fff ;
+    user-select: none;
+    border-radius: 50%;
+    line-height: 70px;
+    margin-right: 40px;
+    margin-left: 25px; 
+}
+
+/* 漢を見せるボタンの詳細 */
+#btn2 {
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    user-select: none;
+    margin-right: 30px;
+    margin-left: 20px;
+    border-radius: 50%;
+    line-height: 70px;
+}
+
+/* 条件入力エリアの詳細 */
+.input-area {
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+/* 結果表示エリアの詳細 */
+.result-area {
+    background: white;
+    padding: 10px;
+    height: 200px;
+    border-radius: 5px;
+    position: relative;
+    border: 2px solid black;
+    margin-top: 30px;
+}
+
+#result.output {
+  color: red;
+  font-size: 18px;
+}
+
+#result {
+    margin: 0;
+    user-select: none;
+}
+
+#reset {
+    text-decoration: underline;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+#reset.hidden {
+    display: none;
+}
+
+/* 会計金額、男性人数、女性人数、割り勘条件を入力してね！の詳細 */
+.coment p {
+    font-size: 11px;
+    text-align: center;
+    user-select: none;
+    font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+/* ボタンを押すと表示される画像の詳細 */
+#pho {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+#pho2 {
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    left: 200px;
+}
+
+/* ボタン押すと表示されるコメントの詳細 */
+#result2 {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+#result3 {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+}
